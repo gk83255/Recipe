@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F8FAFC;
+}
+
+header {
+    padding: 10px;
+}
+
+header nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo span {
+    color: #8500FE;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 1.25rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #555;
+}
+
+.contact-btn a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    background-color: #8500FE;
+    color: #fff;
+    border: 1px solid #8500FE;
+    transition: 300ms ease-in-out;
+}
+
+.contact-btn a:hover {
+    background-color: #fff;
+    color: #8500FE;
+    border: 1px solid #8500FE;
+}
+
+.banner {
+    width: 79%;
+    margin: 3rem auto 2rem;
+    border-radius: 5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.486)),
+        url(./images/recipes-bg.jpg) no-repeat;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.banner h3 {
+    margin-top: 10px;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.left-sidebar {
+    margin-right: 1.75rem;
+}
+
+.left-sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.left-sidebar ul {
+    list-style: none;
+    width: 120px;
+}
+
+.left-sidebar ul li {
+    margin: 0.25rem 0;
+}
+
+.left-sidebar ul li a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 500;
+}
+
+.food-items {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 33%;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.35rem;
+}
+
+.card h6 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0.25rem 0;
+    color: #444;
+}
+
+.card p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #888;
+}
+
+.about {
+    margin-top: 3rem;
+    margin-bottom: 1.75rem;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.about-image {
+    width: 50%;
+    text-align: end;
+}
+
+.about-image img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.about-para {
+    margin-top: 2.5rem;
+    font-size: 1.15rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.tags {
+    height: 85vh;
+    padding-top: 3rem;
+}
+
+.tags .d-flex {
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 5px;
+    width: 33%;
+}
+
+.tag-content {
+    background-color: #62708B;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.tag h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+.tag p {
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.recipes {
+    padding-top: 3rem;
+}
+
+footer {
+    background-color: #222222;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1.75rem;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer span {
+    color: #8500FE;
+}
+
+/* Responsive */
+@media(max-width:775px) {
+    .menu .logo h1 {
+        font-size: 3vw;
+    }
+
+    .menu ul {
+        margin-left: 0;
+    }
+
+    .menu ul li {
+        margin: 0 2.25vw;
+    }
+
+    .menu ul li a {
+        font-size: 2vw;
+    }
+
+    .banner h1 {
+        font-size: 6.5vw;
+    }
+
+    .banner h3 {
+        font-size: 2.3vw;
+    }
+
+    .contact-btn a {
+        font-size: 2vw;
+        padding: 0.75vw 0.75vw;
+    }
+
+    /* 
+    header .contact-btn {
+        display: none;
+    } */
+}
